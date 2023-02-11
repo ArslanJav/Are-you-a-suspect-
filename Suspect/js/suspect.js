@@ -34,4 +34,30 @@ function suspect() {
   }
 }
 
+// Create an IntersectionObserver instance
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    // If an entry is intersecting with the viewport
+    if (entry.isIntersecting) {
+      // Get the image element
+      const image = entry.target;
+      // Get the image source from the data-src attribute
+      const src = image.getAttribute('data-src');
+      // Set the image source
+      image.setAttribute('src', src);
+      // Stop observing the image
+      observer.unobserve(image);
+    }
+  });
+});
+
+// Get all images
+const images = document.querySelectorAll('img[data-src]');
+
+// Observe each image
+images.forEach(image => {
+  observer.observe(image);
+});
+
+
 document.getElementById("enterButton").addEventListener("click", suspect);
