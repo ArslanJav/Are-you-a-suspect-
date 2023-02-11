@@ -15,3 +15,5 @@ Height: 180cm or taller
 Practicing JavaScript using if statements to check weather the conditions meet the description of the suspect and if the person does not match the description it will results to "not a suspect". 
 
 Also the image changes when the person is a suspect or not.
+
+## Preview link: https://mellifluous-figolla-5dc9f9.netlify.app
