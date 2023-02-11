@@ -16,4 +16,4 @@ Practicing JavaScript using if statements to check weather the conditions meet t
 
 Also the image changes when the person is a suspect or not.
 
-## Preview link: [go](https://mellifluous-figolla-5dc9f9.netlify.app){:target="_blank" rel="noopener"}
+## Preview link: https://mellifluous-figolla-5dc9f9.netlify.app
